@@ -8,7 +8,7 @@ for i in range (100):
     unsorted.append(x)
 print(unsorted)
 
-
+############################## BUBBLE SORT ##############################################################################
 
 def bubbleSortList(lst):
     """Takes in a list of unsorted numbers and orders them from smallest to biggest
@@ -35,4 +35,8 @@ elapsed_time = (end_time - start_time)
 
 print(f"Bubble sort elapsed time: {elapsed_time}ms")
 
+############################## QUICK SORT #######################################################################
 
+def quickSortList(lst):
+    listLength = len(lst)
+    
