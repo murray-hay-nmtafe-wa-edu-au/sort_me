@@ -3,14 +3,14 @@ import time
 
 unsorted = []
 
-for i in range (5):
+for i in range (100):
     x = random.randint(0,500)
     unsorted.append(x)
 print(unsorted)
 
 
 
-def sortList(lst):
+def bubbleSortList(lst):
     """Takes in a list of unsorted numbers and orders them from smallest to biggest
 
     Args:
@@ -29,8 +29,10 @@ def sortList(lst):
     
 
 start_time = time.time_ns()/1000
-sortList(unsorted)
+bubbleSortList(unsorted)
 end_time = time.time_ns()/1000
 elapsed_time = (end_time - start_time)
 
-print(f"The elapsed time is {elapsed_time}ms")
+print(f"Bubble sort elapsed time: {elapsed_time}ms")
+
+
