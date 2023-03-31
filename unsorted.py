@@ -20,7 +20,7 @@ for i in range(len(unsorted)):
         iterations += 1
 print(unsorted)
 time_finish = time.time()
-print(f"*** Time Taken = {time_finish - time_start}")
+print(f"*** Time Taken = {time_finish - time_start} seconds")
 print(f"*** Iterations = {iterations}")
 
 
