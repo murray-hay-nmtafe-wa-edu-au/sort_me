@@ -17,5 +17,3 @@ def sort(input_list: list):
                 input_list[index], input_list[index+1] = input_list[index+1], input_list[index]
     
     return input_list
-        
-        
