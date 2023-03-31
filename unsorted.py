@@ -9,5 +9,3 @@ print(unsorted)
 
 unsorted.sort()
 print(unsorted)
-
-#
