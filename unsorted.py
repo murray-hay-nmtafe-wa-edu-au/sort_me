@@ -1,12 +1,14 @@
 import random
+import time
 
 unsorted = []
 
-for i in range (4):
+for i in range (100):
     x = random.randint(0,500)
     unsorted.append(x)
 print(unsorted)
 
+start_time = time.time_ns()
 
 def sortList(lst):
     """Takes in a list of unsorted numbers and orders them from smallest to biggest
@@ -24,5 +26,11 @@ def sortList(lst):
             if lst[b] > lst[b + 1]:
                 lst[b], lst[b+1] = lst[b+1], lst[b]
     print(lst)
+    
+end_time = time.time_ns()
+
+elapsed_time = (end_time - start_time)
+
+print(f"The elapsed time is {elapsed_time}ms")
 
 sortList(unsorted)
