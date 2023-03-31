@@ -3,7 +3,7 @@ import time
 
 unsorted = []
 
-for i in range (100):
+for i in range (5):
     x = random.randint(0,500)
     unsorted.append(x)
 print(unsorted)
@@ -22,18 +22,15 @@ def sortList(lst):
     listLength = len(lst)
     
     for i in range(listLength):
-        for b in range(listLength - i - 1): #j is the total amount of comparisons made
+        for b in range(listLength - i - 1): #b is the total amount of comparisons made
             if lst[b] > lst[b + 1]:
                 lst[b], lst[b+1] = lst[b+1], lst[b]
     print(lst)
     
 
 start_time = time.time_ns()/1000
-
 sortList(unsorted)
-
 end_time = time.time_ns()/1000
-
 elapsed_time = (end_time - start_time)
 
 print(f"The elapsed time is {elapsed_time}ms")
