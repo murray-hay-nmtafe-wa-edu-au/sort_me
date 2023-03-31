@@ -11,6 +11,7 @@ print(unsorted)
 ############################## BUBBLE SORT ##############################################################################
 
 def bubbleSortList(lst):
+    start_time = time.time_ns()/1000
     """Takes in a list of unsorted numbers and orders them from smallest to biggest
 
     Args:
@@ -26,17 +27,17 @@ def bubbleSortList(lst):
             if lst[b] > lst[b + 1]:
                 lst[b], lst[b+1] = lst[b+1], lst[b]
     print(lst)
+    end_time = time.time_ns()/1000
+    elapsed_time = (end_time - start_time)
+    print(f"Bubble sort elapsed time: {elapsed_time}ms")
     
-
-start_time = time.time_ns()/1000
-bubbleSortList(unsorted)
-end_time = time.time_ns()/1000
-elapsed_time = (end_time - start_time)
-
-print(f"Bubble sort elapsed time: {elapsed_time}ms")
+##bubbleSortList(unsorted)
 
 ############################## QUICK SORT #######################################################################
 
 def quickSortList(lst):
     listLength = len(lst)
+    
+    pivot = lst[listLength]
+    
     
