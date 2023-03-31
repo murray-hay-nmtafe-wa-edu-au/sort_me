@@ -3,12 +3,9 @@ import random
 
 unsorted = []
 
-for i in range (100):
+for i in range (5):
     x = random.randint(0,500)
     unsorted.append(x)
-print(unsorted)
-
-unsorted.sort()
 print(unsorted)
 
 sort_method.sort(unsorted)
