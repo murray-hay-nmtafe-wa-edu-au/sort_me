@@ -2,6 +2,7 @@ import random
 import time
 
 unsorted = []
+iterations = 0
 print("** CREATING random list of numbers **")
 
 for i in range (100):
@@ -16,8 +17,10 @@ for i in range(len(unsorted)):
     for n in range(i+1, len(unsorted)):
         if i > n:
             unsorted[i], unsorted[n] = unsorted[n], unsorted[i]
+        iterations += 1
 print(unsorted)
 time_finish = time.time()
-print(time_finish - time_start)
+print(f"*** Time Taken = {time_finish - time_start}")
+print(f"*** Iterations = {iterations}")
 
 
