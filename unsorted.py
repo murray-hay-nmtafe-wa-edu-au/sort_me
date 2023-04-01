@@ -6,7 +6,7 @@ unsorted = []
 for i in range (100):
     x = random.randint(0,500)
     unsorted.append(x)
-print(unsorted)
+print(f"UNSORTED: {unsorted} \n")
 
 sort_method.sort(unsorted)
-print(unsorted)
+print(f"SORTED: {unsorted}")
