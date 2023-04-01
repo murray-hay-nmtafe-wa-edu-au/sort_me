@@ -1,3 +1,4 @@
+"""Module provides sort function."""
 def sort(input_list: list):
     """
     Sorts a list of integers from ascending order.
