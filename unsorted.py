@@ -1,6 +1,6 @@
 """Module providing random numbers."""
-"""Module providing sort function."""
 import random
+"""Module providing sort function."""
 import sort_method
 
 unsorted = []
