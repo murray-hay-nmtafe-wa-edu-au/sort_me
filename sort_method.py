@@ -1,4 +1,7 @@
-"""Module provides sort function."""
+"""
+This module provides a sorting algorithm that  
+sorts a list of integers in ascending order.
+"""
 def sort(input_list: list):
     """
     Sorts a list of integers from ascending order.
