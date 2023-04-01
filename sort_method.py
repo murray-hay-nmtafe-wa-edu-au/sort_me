@@ -15,5 +15,4 @@ def sort(input_list: list):
             # Swap elements if they are not in ascending order.
             if input_list[index] > input_list[index+1]:
                 input_list[index], input_list[index+1] = input_list[index+1], input_list[index]
-    
     return input_list
