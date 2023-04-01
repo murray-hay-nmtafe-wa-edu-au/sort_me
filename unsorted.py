@@ -1,6 +1,6 @@
 """
 This module generates a list of random numbers, 
-and sort them using a custom sorting algorithm.
+and sorts them using a custom sorting algorithm.
 """
 import random
 import sort_method
