@@ -1,4 +1,5 @@
-""" pointless information goes here"""
+"""pointless information goes here
+and more goes here"""
 
 
 import random
@@ -20,8 +21,8 @@ def bubble_sort_list(lst):
           lst (list): a list of numbers (int)
 
     Return:
-        lst (list): prints a sorted list
-    """
+        lst (list): prints a sorted list"""
+    
     list_length = len(lst)
 
     for bitter in range(list_length):
