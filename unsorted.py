@@ -14,15 +14,13 @@ print(unsorted)
 
 
 def bubble_sort_list(lst):
-    start_time = time.time_ns() / 1000
-    """Takes in a list of unsorted numbers and orders them from smallest to biggest
 
+    """Takes in a list of unsorted numbers and orders them from smallest to biggest
     Args:
           lst (list): a list of numbers (int)
-
     Return:
         lst (list): prints a sorted list"""
-    
+    start_time = time.time_ns() / 1000
     list_length = len(lst)
 
     for bitter in range(list_length):
