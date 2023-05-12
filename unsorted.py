@@ -6,9 +6,8 @@ unsorted = []
 for i in range (100):
     x = random.randint(0,500)
     unsorted.append(x)
-print(unsorted)
+print("unsorted: ", unsorted)
 
-############################## BUBBLE SORT ##############################################################################
 
 def bubbleSortList(lst):
     start_time = time.time_ns()/1000
@@ -31,13 +30,5 @@ def bubbleSortList(lst):
     elapsed_time = (end_time - start_time)
     print(f"Bubble sort elapsed time: {elapsed_time}ms")
     
-##bubbleSortList(unsorted)
-
-############################## QUICK SORT #######################################################################
-
-def quickSortList(lst):
-    listLength = len(lst)
-    
-    pivot = lst[listLength]
-    
-    
+if __name__ == '__main__':
+    bubbleSortList(unsorted)
