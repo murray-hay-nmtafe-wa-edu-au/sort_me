@@ -25,7 +25,7 @@ def bubble_sort_list(lst):
     list_length = len(lst)
 
     for bitter in range(list_length):
-        for better in range(list_length - bitter - 1):  # b is the total amount of comparisons made
+        for better in range(list_length - bitter - 1):
             if lst[better] > lst[better + 1]:
                 lst[better], lst[better + 1] = lst[better + 1], lst[better]
     print(lst)
